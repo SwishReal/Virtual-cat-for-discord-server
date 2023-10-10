@@ -60,20 +60,20 @@ async def help(ctx):
 @bot.command()
 async def changelog(ctx):
     embed = discord.Embed(title="Changelog", description="your bot name")
-    embed.add_field(name="Возможность сохранить статистику", value=f"description")
+    embed.add_field(name="name", value=f"description")
     embed.set_footer(text="footer")
     embed.set_thumbnail(url="image url")
     await ctx.send(embed=embed)
 
 @bot.command()
-async def статистика(ctx):
+async def stats(ctx):
     global feed_stats
     global stroke_stats
     embed = discord.Embed(title="Statistics", description="Description")
     embed.add_field(name="How many times have you been fed?", value=f"text {feed_stats}! text")
     embed.add_field(name="How many times ironed?", value=f"text {stroke_stats}! text")
     embed.set_footer(text="footer")
-    embed.set_thumbnail(url="https://i.postimg.cc/d1wR7VN6/senya.webp")
+    embed.set_thumbnail(url="image url")
     await ctx.send(embed=embed)
 
 bot.run('Your token')
